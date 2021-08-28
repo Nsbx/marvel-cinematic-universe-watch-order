@@ -1,0 +1,23 @@
+{
+  "name": "marvel-cinematic-universe-watch-order",
+  "version": "1.0.0",
+  "repository": "git@github.com:Nsbx/marvel-cinematic-universe-watch-order.git",
+  "author": "Nsbx",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --no-optimize"
+  },
+  "dependencies": {
+    "lit": "^2.0.0-rc.3",
+    "mixitup": "^3.3.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-rc.0",
+    "@babel/preset-typescript": "^7.15.0",
+    "@parcel/transformer-image": "2.0.0-rc.0",
+    "@parcel/transformer-typescript-tsc": "^2.0.0-beta.3",
+    "sharp": "^0.29.0"
+  }
+}
