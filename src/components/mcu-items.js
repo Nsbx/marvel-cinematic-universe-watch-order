@@ -1,31 +1,10 @@
-import {
-  html,
-  css,
-  LitElement
-} from 'lit';
+import { html, LitElement } from 'lit';
 
 import mixitup from 'mixitup';
 
 import McuItems from '../data/mcu-items.js';
 
 export class McuItem extends LitElement {
-  static get styles() {
-    return css `
-      #mcu-items-container {
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      .item {
-        margin-bottom: 0px;
-      }
-    
-      .poster {
-          width: 200px;
-      }
-  `;
-  }
-
   static get properties() {
     return {
       items: {
@@ -37,6 +16,10 @@ export class McuItem extends LitElement {
   constructor() {
     super();
     this.items = McuItems;
+  }
+
+  createRenderRoot() {
+    return this; // turn off shadow dom to access external styles
   }
 
   render() {
@@ -53,6 +36,10 @@ export class McuItem extends LitElement {
             html`
               <div class="item" data-order="${item.order_position}" data-date="${item.date}" data-type="${item.type}">
                 <img class="poster" src="${item.poster}" alt="${item.title}">
+                <div class="item-body">
+                  <h1>${item.title}</h1>
+                  <h6>${item.date}</h6>
+                </div>
               </div>
             `
         )}
@@ -61,9 +48,7 @@ export class McuItem extends LitElement {
   }
 
   updated() {
-    let container = this.shadowRoot.getElementById('mcu-items-container');
-
-    console.log(container);
+    let container = document.getElementById('mcu-items-container');
 
     let mixer = mixitup(container, {
       selectors: {
@@ -77,7 +62,7 @@ export class McuItem extends LitElement {
       }
     });
 
-    let sortButtons = this.shadowRoot.querySelectorAll('[data-sort]');
+    let sortButtons = document.querySelectorAll('[data-sort]');
 
     sortButtons.forEach(el => {
       el.addEventListener('click', (event) => {
@@ -86,7 +71,7 @@ export class McuItem extends LitElement {
       })
     })
 
-    let filterButtons = this.shadowRoot.querySelectorAll('[data-filter]');
+    let filterButtons = document.querySelectorAll('[data-filter]');
 
     filterButtons.forEach(el => {
       el.addEventListener('click', (event) => {
