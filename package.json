@@ -1,27 +1,25 @@
 {
   "name": "marvel-cinematic-universe-watch-order",
-  "version": "1.0.0",
-  "repository": "git@github.com:Nsbx/marvel-cinematic-universe-watch-order.git",
-  "author": "Nsbx",
-  "browserslist": "> 0.5%, last 2 versions, not dead",
-  "license": "MIT",
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html --no-optimize"
-  },
-  "dependencies": {
-    "lit": "^2.0.0-rc.3",
-    "mixitup": "^3.3.1"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
-    "@babel/preset-typescript": "^7.15.0",
-    "@parcel/transformer-image": "2.0.0-rc.0",
-    "@parcel/transformer-sass": "2.0.0-rc.0",
-    "@parcel/transformer-typescript-tsc": "^2.0.0-beta.3",
-    "autoprefixer": "^10.3.3",
-    "parcel": "^2.0.0-rc.0",
-    "postcss": "^8.3.6",
-    "sharp": "^0.29.0",
-    "tailwindcss": "^2.2.8"
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.11",
+    "@tsconfig/svelte": "^2.0.1",
+    "autoprefixer": "^10.3.6",
+    "postcss": "^8.3.8",
+    "svelte": "^3.37.0",
+    "svelte-check": "^2.1.0",
+    "svelte-preprocess": "^4.7.2",
+    "tailwindcss": "^2.2.16",
+    "tslib": "^2.2.0",
+    "typescript": "^4.3.2",
+    "vite": "^2.5.4",
+    "vite-imagetools": "^3.6.8"
   }
 }

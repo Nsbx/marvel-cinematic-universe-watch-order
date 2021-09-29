@@ -1,43 +1,7 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
-  @apply bg-gray-700;
-}
-
-button {
-  @apply p-2 m-2 bg-gray-800 hover:bg-gray-900 text-white border border-gray-900 rounded-md;
-}
-
-#mcu-items-container {
-  @apply flex flex-col items-center p-4;
-}
-
-.item {
-  @apply flex justify-between sm:w-2/4 rounded-xl overflow-hidden;
-}
-
-.item-body {
-  @apply bg-gray-800 p-6 hidden sm:block sm:w-full w-min;
-}
-
-.item h1 {
-  @apply text-lg font-bold text-white;
-}
-
-.item h6 {
-  @apply text-sm text-gray-400;
-}
-
-.item:nth-child(even) {
-  @apply self-end flex-row-reverse;
-}
-
-.item:nth-child(odd) {
-  @apply self-start;
-}
-
-.poster {
-  @apply h-64;
-}
+    @apply bg-gray-700;
+  }
