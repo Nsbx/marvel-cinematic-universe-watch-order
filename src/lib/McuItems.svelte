@@ -59,7 +59,8 @@
     if (filterProperty === 'all') {
       items = McuItems;
     } else {
-      items = McuItems.filter(item => item[filterProperty] == filterValue);
+      let filteredMcuItems = McuItems.filter(item => item[filterProperty] == filterValue);
+      items = filteredMcuItems;
     }
   }
 
@@ -71,17 +72,24 @@
   <button type="button" data-sort="date:asc" on:click={sort}>Sort By Date</button>
   <hr />
   <button type="button" data-filter="all" on:click={filter}>Show All</button>
-  <button type="button" data-filter="type:movie" on:click={filter}>Hide show</button>
+  <button type="button" data-filter="type:movie" on:click={filter}>Show movie</button>
+  <button type="button" data-filter="type:tv-show" on:click={filter}>Show TV show</button>
+  <button type="button" data-filter="type:animated-tv-show" on:click={filter}>Hide animated TV show</button>
 </div>
 <hr />
 <div id="mcu-items-container" >
   {#each items as item (item.order_position)}
     <div animate:flip="{{ duration:d => 20 * Math.floor(Math.sqrt(d)) }}" class="item">
       <img src="{item.poster}" alt={item.title} class="poster" />
-      <!-- <div class="item-body">
+      <div class="item-body">
         <h1>{item.title}</h1>
         <h6>{item.date}</h6>
-      </div> -->
+        {#if typeof item.post_credit_scenes == 'number' }
+        <p>Post credit scene : {item.post_credit_scenes == 0 ? '?' : item.post_credit_scenes}</p>
+        {:else if typeof item.post_credit_scenes == 'object' }
+        <p>Post credit scene : {item.post_credit_scenes.length}</p>
+        {/if}
+      </div>
     </div>
   {/each}
 </div>
@@ -92,29 +100,33 @@
   }
 
   #mcu-items-container {
-    @apply flex flex-wrap p-4;
+    @apply flex flex-wrap p-4 gap-2;
   }
 
   /**
   #mcu-items-container {
     @apply flex flex-col items-center p-4;
-  }
+  }*/
 
   .item {
-    @apply flex justify-between sm:w-2/4 rounded-xl overflow-hidden;
+    @apply w-48;
   }
 
   .item-body {
-    @apply bg-gray-800 p-6 hidden sm:block sm:w-full w-min;
+    @apply bg-gray-800 p-6 block w-full;
   }
-  */
+  
 
   .item h1 {
-    @apply text-lg font-bold text-white;
+    @apply font-bold text-white truncate;
   }
 
   .item h6 {
     @apply text-sm text-gray-400;
+  }
+
+  .item p {
+    @apply w-full text-xs text-gray-400 pt-2;
   }
 
   /**
@@ -128,6 +140,6 @@
   */
 
   .poster {
-    @apply h-64;
+    @apply w-48;
   }
 </style>
