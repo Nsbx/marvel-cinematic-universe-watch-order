@@ -1,5 +1,6 @@
 <script lang="ts">
   import { flip } from 'svelte/animate';
+  import { fade } from 'svelte/transition';
 
   import McuItems from "../data/mcu-items.js";
 
@@ -74,12 +75,12 @@
   <button type="button" data-filter="all" on:click={filter}>Show All</button>
   <button type="button" data-filter="type:movie" on:click={filter}>Show movie</button>
   <button type="button" data-filter="type:tv-show" on:click={filter}>Show TV show</button>
-  <button type="button" data-filter="type:animated-tv-show" on:click={filter}>Hide animated TV show</button>
+  <button type="button" data-filter="type:animated-tv-show" on:click={filter}>Show animated TV show</button>
 </div>
 <hr />
 <div id="mcu-items-container" >
   {#each items as item (item.order_position)}
-    <div animate:flip="{{ duration:d => 20 * Math.floor(Math.sqrt(d)) }}" class="item">
+    <div animate:flip="{{ duration:d => 20 * Math.floor(Math.sqrt(d)) }}" transition:fade class="item">
       <img src="{item.poster}" alt={item.title} class="poster" />
       <div class="item-body">
         <h1>{item.title}</h1>
