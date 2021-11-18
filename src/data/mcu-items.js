@@ -247,7 +247,8 @@ const McuItems = [
         date: '2021/01/15',
         order_position: 24,
         tmdb_link: 'https://www.themoviedb.org/tv/85271-wandavision',
-        post_credit_scenes: [
+        post_credit_scenes: 4,
+        post_credit_scenes_details: [
             {
                 episode: 7,
                 count: 1
@@ -270,7 +271,8 @@ const McuItems = [
         date: '2021/03/19',
         order_position: 25,
         tmdb_link: 'https://www.themoviedb.org/tv/88396-falcon-winter-soldier',
-        post_credit_scenes: [
+        post_credit_scenes: 2,
+        post_credit_scenes_details: [
             {
                 episode: 5,
                 count: 1
@@ -298,7 +300,8 @@ const McuItems = [
         date: '2021/06/09',
         order_position: 27,
         tmdb_link: 'https://www.themoviedb.org/tv/84958-loki',
-        post_credit_scenes: [
+        post_credit_scenes: 2,
+        post_credit_scenes_details: [
             {
                 episode: 4,
                 count: 1
@@ -317,7 +320,8 @@ const McuItems = [
         date: '2021/08/11',
         order_position: 28,
         tmdb_link: 'https://www.themoviedb.org/tv/91363-what-if',
-        post_credit_scenes: [
+        post_credit_scenes: 1,
+        post_credit_scenes_details: [
             {
                 episode: 9,
                 count: 1
@@ -349,7 +353,7 @@ const McuItems = [
         date: '2021/12/15',
         order_position: 31,
         tmdb_link: 'https://www.themoviedb.org/movie/634649-spider-man-no-way-home',
-        post_credit_scenes: 0
+        post_credit_scenes: -1
     },
 ];
 

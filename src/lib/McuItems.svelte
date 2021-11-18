@@ -2,7 +2,17 @@
   import { flip } from 'svelte/animate';
   import { fade } from 'svelte/transition';
 
+  import tooltip from "../script/tooltip";
+
+  import Tooltip from './tooltip/Tooltip.svelte'
+  import TvShowTooltipContent from './tooltip/TvShowTooltipContent.svelte'
+
   import McuItems from "../data/mcu-items.js";
+
+  let tooltipOption = {
+    theme: "translucent",
+    followCursor: "horizontal",
+  }
 
   let items = McuItems;
 
@@ -83,12 +93,19 @@
     <div animate:flip="{{ duration:d => 20 * Math.floor(Math.sqrt(d)) }}" transition:fade class="item">
       <img src="{item.poster}" alt={item.title} class="poster" />
       <div class="item-body">
-        <h1>{item.title}</h1>
+        {#if item.title.length >= 17 }
+        <h1 use:tooltip={tooltipOption} title={item.title}>{item.title}</h1>
+        {:else}
+        <h1 title={item.title}>{item.title}</h1>
+        {/if}
         <h6>{item.date}</h6>
-        {#if typeof item.post_credit_scenes == 'number' }
-        <p>Post credit scene : {item.post_credit_scenes == 0 ? '?' : item.post_credit_scenes}</p>
-        {:else if typeof item.post_credit_scenes == 'object' }
-        <p>Post credit scene : {item.post_credit_scenes.length}</p>
+        {#if item.type === 'movie' }
+        <p>Post credit scene : {item.post_credit_scenes == -1 ? '?' : item.post_credit_scenes}</p>
+        {:else}
+        <Tooltip tippyParams={tooltipOption}>
+          <p slot="element">Post credit scene : {item.post_credit_scenes}</p>
+          <TvShowTooltipContent slot="element-tooltip-content" postCreditScenes={item.post_credit_scenes_details}></TvShowTooltipContent>
+        </Tooltip>
         {/if}
       </div>
     </div>
@@ -101,13 +118,8 @@
   }
 
   #mcu-items-container {
-    @apply flex flex-wrap p-4 gap-2;
+    @apply flex flex-wrap p-4 gap-2 justify-center;
   }
-
-  /**
-  #mcu-items-container {
-    @apply flex flex-col items-center p-4;
-  }*/
 
   .item {
     @apply w-48;
@@ -129,16 +141,6 @@
   .item p {
     @apply w-full text-xs text-gray-400 pt-2;
   }
-
-  /**
-  .item:nth-child(even) {
-    @apply self-end flex-row-reverse;
-  }
-
-  .item:nth-child(odd) {
-    @apply self-start;
-  }
-  */
 
   .poster {
     @apply w-48;

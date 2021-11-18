@@ -9,7 +9,7 @@
   Clicks: {count}
 </button>
 
-<style lang="postcss" scoped>
+<style lang="postcss">
   button {
     @apply text-yellow-600 
     bg-yellow-600 
