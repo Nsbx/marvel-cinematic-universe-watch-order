@@ -29,6 +29,7 @@ import lokiImageUrl                              from "../assets/mcu-items/Loki_
 import whatIfImageUrl                            from "../assets/mcu-items/What_If_(2021).jpg?as=webp&width=250px";
 import shangChiAndTheLegendOfTheTenRingsImageUrl from "../assets/mcu-items/Shang-Chi_and_the_Legend_of_the_Ten_Rings_(2021).jpg?as=webp&width=250px";
 import eternalsImageUrl                          from "../assets/mcu-items/Eternals_(2021).jpg?as=webp&width=250px";
+import hawkeyeImageUrl                           from "../assets/mcu-items/Hawkeye_(2021).jpg?as=webp&width=250px";
 import spiderManNoWayHomeImageUrl                from "../assets/mcu-items/Spider-Man_No_Way_Home_(2021).jpg?as=webp&width=250px";
 
 const McuItems = [
@@ -36,7 +37,7 @@ const McuItems = [
         title: 'Captain America: The First Avenger',
         type: 'movie',
         poster: captainAmericaTheFirstAvengerImageUrl,
-        date: '2011/08/17',
+        date: '2011-08-17',
         order_position: 1,
         tmdb_link: 'https://www.themoviedb.org/movie/1771-captain-america-the-first-avenger',
         post_credit_scenes: 1
@@ -45,7 +46,7 @@ const McuItems = [
         title: 'Captain Marvel',
         type: 'movie',
         poster: captainMarvelImageUrl,
-        date: '2019/03/06',
+        date: '2019-03-06',
         order_position: 2,
         tmdb_link: 'https://www.themoviedb.org/movie/299537-captain-marvel',
         post_credit_scenes: 2
@@ -54,7 +55,7 @@ const McuItems = [
         title: 'Iron Man',
         type: 'movie',
         poster: ironManImageUrl,
-        date: '2008/04/30',
+        date: '2008-04-30',
         order_position: 3,
         tmdb_link: 'https://www.themoviedb.org/movie/1726-iron-man',
         post_credit_scenes: 1
@@ -63,7 +64,7 @@ const McuItems = [
         title: 'Iron Man 2',
         type: 'movie',
         poster: ironMan2ImageUrl,
-        date: '2010/04/28',
+        date: '2010-04-28',
         order_position: 4,
         tmdb_link: 'https://www.themoviedb.org/movie/10138-iron-man-2',
         post_credit_scenes: 1
@@ -72,7 +73,7 @@ const McuItems = [
         title: 'The Incredible Hulk',
         type: 'movie',
         poster: theIncredibleHulkImageUrl,
-        date: '2008/07/23',
+        date: '2008-07-23',
         order_position: 5,
         tmdb_link: 'https://www.themoviedb.org/movie/1724-the-incredible-hulk',
         post_credit_scenes: 1
@@ -81,7 +82,7 @@ const McuItems = [
         title: 'Thor',
         type: 'movie',
         poster: thorImageUrl,
-        date: '2011/04/27',
+        date: '2011-04-27',
         order_position: 6,
         tmdb_link: 'https://www.themoviedb.org/movie/10195-thor',
         post_credit_scenes: 1
@@ -90,7 +91,7 @@ const McuItems = [
         title: 'The Avengers',
         type: 'movie',
         poster: theAvengersImageUrl,
-        date: '2012/04/25',
+        date: '2012-04-25',
         order_position: 7,
         tmdb_link: 'https://www.themoviedb.org/movie/24428-the-avengers',
         post_credit_scenes: 2
@@ -99,7 +100,7 @@ const McuItems = [
         title: 'Iron Man 3',
         type: 'movie',
         poster: ironMan3ImageUrl,
-        date: '2013/04/24',
+        date: '2013-04-24',
         order_position: 8,
         tmdb_link: 'https://www.themoviedb.org/movie/68721-iron-man-3',
         post_credit_scenes: 1
@@ -108,7 +109,7 @@ const McuItems = [
         title: 'Thor: The Dark World',
         type: 'movie',
         poster: thorTheDarkWorldImageUrl,
-        date: '2013/10/30',
+        date: '2013-10-30',
         order_position: 9,
         tmdb_link: 'https://www.themoviedb.org/movie/76338-thor-the-dark-world',
         post_credit_scenes: 2
@@ -117,7 +118,7 @@ const McuItems = [
         title: 'Captain America: The Winter Soldier',
         type: 'movie',
         poster: captainAmericaTheWinterSoldierImageUrl,
-        date: '2014/03/26',
+        date: '2014-03-26',
         order_position: 10,
         tmdb_link: 'https://www.themoviedb.org/movie/100402-captain-america-the-winter-soldier',
         post_credit_scenes: 2
@@ -126,7 +127,7 @@ const McuItems = [
         title: 'Guardians of the Galaxy',
         type: 'movie',
         poster: guardiansOfTheGalaxyImageUrl,
-        date: '2014/08/13',
+        date: '2014-08-13',
         order_position: 11,
         tmdb_link: 'https://www.themoviedb.org/movie/118340-guardians-of-the-galaxy',
         post_credit_scenes: 2
@@ -135,7 +136,7 @@ const McuItems = [
         title: 'Guardians of the Galaxy Vol. 2',
         type: 'movie',
         poster: guardiansOfTheGalaxyVol2ImageUrl,
-        date: '2017/04/26',
+        date: '2017-04-26',
         order_position: 12,
         tmdb_link: 'https://www.themoviedb.org/movie/283995-guardians-of-the-galaxy-2',
         post_credit_scenes: 5
@@ -144,7 +145,7 @@ const McuItems = [
         title: 'Avengers: Age of Ultron',
         type: 'movie',
         poster: avengersAgeOfUltronImageUrl,
-        date: '2015/04/22',
+        date: '2015-04-22',
         order_position: 13,
         tmdb_link: 'https://www.themoviedb.org/movie/99861-avengers-age-of-ultron',
         post_credit_scenes: 1
@@ -153,7 +154,7 @@ const McuItems = [
         title: 'Ant-Man',
         type: 'movie',
         poster: antManImageUrl,
-        date: '2015/07/14',
+        date: '2015-07-14',
         order_position: 14,
         tmdb_link: 'https://www.themoviedb.org/movie/102899-ant-man',
         post_credit_scenes: 2
@@ -162,17 +163,26 @@ const McuItems = [
         title: 'Captain America: Civil War',
         type: 'movie',
         poster: captainAmericaCivilWarImageUrl,
-        date: '2016/04/27',
+        date: '2016-04-27',
         order_position: 15,
         tmdb_link: 'https://www.themoviedb.org/movie/271110-captain-america-civil-war',
         post_credit_scenes: 2
     },
     {
+        title: 'Black Widow',
+        type: 'movie',
+        poster: blackWidowImageUrl,
+        date: '2021-07-07',
+        order_position: 16,
+        tmdb_link: 'https://www.themoviedb.org/movie/497698-black-widow',
+        post_credit_scenes: 1
+    },
+    {
         title: 'Spider-Man: Homecoming',
         type: 'movie',
         poster: spiderManHomecomingImageUrl,
-        date: '2017/07/12',
-        order_position: 16,
+        date: '2017-07-12',
+        order_position: 17,
         tmdb_link: 'https://www.themoviedb.org/movie/315635-spider-man-homecoming',
         post_credit_scenes: 2
     },
@@ -180,8 +190,8 @@ const McuItems = [
         title: 'Doctor Strange',
         type: 'movie',
         poster: doctorStrangeImageUrl,
-        date: '2016/10/26',
-        order_position: 17,
+        date: '2016-10-26',
+        order_position: 18,
         tmdb_link: 'https://www.themoviedb.org/movie/284052-doctor-strange',
         post_credit_scenes: 2
     },
@@ -189,8 +199,8 @@ const McuItems = [
         title: 'Black Panther',
         type: 'movie',
         poster: blackPantherImageUrl,
-        date: '2018/02/14',
-        order_position: 18,
+        date: '2018-02-14',
+        order_position: 19,
         tmdb_link: 'https://www.themoviedb.org/movie/284054-black-panther',
         post_credit_scenes: 2
     },
@@ -198,8 +208,8 @@ const McuItems = [
         title: 'Thor: Ragnarok',
         type: 'movie',
         poster: thorRagnarokImageUrl,
-        date: '2017/10/25',
-        order_position: 19,
+        date: '2017-10-25',
+        order_position: 20,
         tmdb_link: 'https://www.themoviedb.org/movie/284053-thor-ragnarok',
         post_credit_scenes: 2
     },
@@ -207,25 +217,16 @@ const McuItems = [
         title: 'Ant-Man and the Wasp',
         type: 'movie',
         poster: antManAndTheWaspImageUrl,
-        date: '2018/07/18',
-        order_position: 20,
+        date: '2018-07-18',
+        order_position: 21,
         tmdb_link: 'https://www.themoviedb.org/movie/363088-ant-man-and-the-wasp',
         post_credit_scenes: 2
-    },
-    {
-        title: 'Black Widow',
-        type: 'movie',
-        poster: blackWidowImageUrl,
-        date: '2021/07/07',
-        order_position: 21,
-        tmdb_link: 'https://www.themoviedb.org/movie/497698-black-widow',
-        post_credit_scenes: 1
     },
     {
         title: 'Avengers: Infinity War',
         type: 'movie',
         poster: avengersInfinityWarImageUrl,
-        date: '2018/04/25',
+        date: '2018-04-25',
         order_position: 22,
         tmdb_link: 'https://www.themoviedb.org/movie/299536-avengers-infinity-war',
         post_credit_scenes: 1
@@ -234,7 +235,7 @@ const McuItems = [
         title: 'Avengers: Endgame',
         type: 'movie',
         poster: avengersEndGameImageUrl,
-        date: '2019/04/24',
+        date: '2019-04-24',
         order_position: 23,
         tmdb_link: 'https://www.themoviedb.org/movie/299534-avengers-endgame',
         post_credit_scenes: 0
@@ -244,7 +245,7 @@ const McuItems = [
         type: 'tv-show',
         season: 1,
         poster: wandaVisionImageUrl,
-        date: '2021/01/15',
+        date: '2021-01-15',
         order_position: 24,
         tmdb_link: 'https://www.themoviedb.org/tv/85271-wandavision',
         post_credit_scenes: 4,
@@ -268,7 +269,7 @@ const McuItems = [
         type: 'tv-show',
         season: 1,
         poster: theFalconAndTheWinterSoldierImageUrl,
-        date: '2021/03/19',
+        date: '2021-03-19',
         order_position: 25,
         tmdb_link: 'https://www.themoviedb.org/tv/88396-falcon-winter-soldier',
         post_credit_scenes: 2,
@@ -287,7 +288,7 @@ const McuItems = [
         title: 'Spider-Man : Far From Home',
         type: 'movie',
         poster: spiderManFarFromHomeImageUrl,
-        date: '2019/07/03',
+        date: '2019-07-03',
         order_position: 26,
         tmdb_link: 'https://www.themoviedb.org/movie/429617-spider-man-far-from-home',
         post_credit_scenes: 2
@@ -297,7 +298,7 @@ const McuItems = [
         type: 'tv-show',
         season: 1,
         poster: lokiImageUrl,
-        date: '2021/06/09',
+        date: '2021-06-09',
         order_position: 27,
         tmdb_link: 'https://www.themoviedb.org/tv/84958-loki',
         post_credit_scenes: 2,
@@ -317,7 +318,7 @@ const McuItems = [
         type: 'animated-tv-show',
         season: 1,
         poster: whatIfImageUrl,
-        date: '2021/08/11',
+        date: '2021-08-11',
         order_position: 28,
         tmdb_link: 'https://www.themoviedb.org/tv/91363-what-if',
         post_credit_scenes: 1,
@@ -332,7 +333,7 @@ const McuItems = [
         title: 'Shang-Chi and the Legend of the Ten Rings',
         type: 'movie',
         poster: shangChiAndTheLegendOfTheTenRingsImageUrl,
-        date: '2021/09/01',
+        date: '2021-09-01',
         order_position: 29,
         tmdb_link: 'https://www.themoviedb.org/movie/566525-shang-chi-and-the-legend-of-the-ten-rings',
         post_credit_scenes: 2
@@ -341,17 +342,29 @@ const McuItems = [
         title: 'Eternals',
         type: 'movie',
         poster: eternalsImageUrl,
-        date: '2021/11/03',
+        date: '2021-11-03',
         order_position: 30,
         tmdb_link: 'https://www.themoviedb.org/movie/524434-eternals',
         post_credit_scenes: 2
     },
     {
+        title: 'Hawkeye',
+        type: 'tv-show',
+        season: 1,
+        poster: hawkeyeImageUrl,
+        date: '2021-11-24',
+        order_position: 31,
+        tmdb_link: 'https://www.themoviedb.org/tv/88329-hawkeye',
+        post_credit_scenes: -1,
+        post_credit_scenes_details: []
+    },
+
+    {
         title: 'Spider-Man : No Way Home',
         type: 'movie',
         poster: spiderManNoWayHomeImageUrl,
-        date: '2021/12/15',
-        order_position: 31,
+        date: '2021-12-15',
+        order_position: 32,
         tmdb_link: 'https://www.themoviedb.org/movie/634649-spider-man-no-way-home',
         post_credit_scenes: -1
     },

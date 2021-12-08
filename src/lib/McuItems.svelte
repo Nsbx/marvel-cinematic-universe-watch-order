@@ -75,6 +75,18 @@
     }
   }
 
+  const formattedDate = (d) => {
+    d = new Date(d);
+    let month = String(d.getMonth() + 1);
+    let day = String(d.getDate());
+    const year = String(d.getFullYear());
+
+    if (month.length < 2) month = '0' + month;
+    if (day.length < 2) day = '0' + day;
+
+    return `${day}/${month}/${year}`;
+  }
+
   // console.log({duration: , position: item.order_position})
 </script>
 
@@ -98,14 +110,18 @@
         {:else}
         <h1 title={item.title}>{item.title}</h1>
         {/if}
-        <h6>{item.date}</h6>
+        <h6>{formattedDate(item.date)}</h6>
         {#if item.type === 'movie' }
         <p>Post credit scene : {item.post_credit_scenes == -1 ? '?' : item.post_credit_scenes}</p>
         {:else}
-        <Tooltip tippyParams={tooltipOption}>
-          <p slot="element">Post credit scene : {item.post_credit_scenes}</p>
-          <TvShowTooltipContent slot="element-tooltip-content" postCreditScenes={item.post_credit_scenes_details}></TvShowTooltipContent>
-        </Tooltip>
+          {#if item.post_credit_scenes != -1 }
+          <Tooltip tippyParams={tooltipOption}>
+            <p slot="element">Post credit scene : {item.post_credit_scenes == -1 ? '?' : item.post_credit_scenes}</p>
+            <TvShowTooltipContent slot="element-tooltip-content" postCreditScenes={item.post_credit_scenes_details}></TvShowTooltipContent>
+          </Tooltip>
+          {:else}
+            <p>Post credit scene : {item.post_credit_scenes == -1 ? '?' : item.post_credit_scenes}</p>
+          {/if}
         {/if}
       </div>
     </div>
