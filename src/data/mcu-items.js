@@ -1,36 +1,36 @@
 // @ts-nocheck
-import captainAmericaTheFirstAvengerImageUrl     from "../assets/mcu-items/Captain_America_-_First_Avenger_(2011).jpg?as=webp&width=250px";
-import captainMarvelImageUrl                     from "../assets/mcu-items/Captain_Marvel_(2019).jpg?as=webp&width=250px";
-import ironManImageUrl                           from "../assets/mcu-items/Iron_Man_(2008).jpg?as=webp&width=250px";
-import ironMan2ImageUrl                          from "../assets/mcu-items/Iron_Man_2_(2010).jpg?as=webp&width=250px";
-import theIncredibleHulkImageUrl                 from "../assets/mcu-items/The_Incredible_Hulk_(2008).jpg?as=webp&width=250px";
-import thorImageUrl                              from "../assets/mcu-items/Thor_(2011).jpg?as=webp&width=250px";
-import theAvengersImageUrl                       from "../assets/mcu-items/The_Avengers_(2012).jpg?as=webp&width=250px";
-import ironMan3ImageUrl                          from "../assets/mcu-items/Iron_Man_3_(2013).jpg?as=webp&width=250px";
-import thorTheDarkWorldImageUrl                  from "../assets/mcu-items/Thor_-_The_Dark_World_(2013).jpg?as=webp&width=250px";
-import captainAmericaTheWinterSoldierImageUrl    from "../assets/mcu-items/Captain_America_-_The_Winter_Soldier_(2014).jpg?as=webp&width=250px";
-import guardiansOfTheGalaxyImageUrl              from "../assets/mcu-items/Guardians_of_the_Galaxy_(2014).jpg?as=webp&width=250px";
-import guardiansOfTheGalaxyVol2ImageUrl          from "../assets/mcu-items/Guardians_of_the_Galaxy_Vol._2_(2017).jpg?as=webp&width=250px";
-import avengersAgeOfUltronImageUrl               from "../assets/mcu-items/Avengers_Age_of_Ultron_(2015).jpg?as=webp&width=250px";
-import antManImageUrl                            from "../assets/mcu-items/Ant-Man_(2015).jpg?as=webp&width=250px";
-import captainAmericaCivilWarImageUrl            from "../assets/mcu-items/Captain_America_-_Civil_War_(2016).jpg?as=webp&width=250px";
-import spiderManHomecomingImageUrl               from "../assets/mcu-items/Spider-Man_-_Homecoming_(2017).jpg?as=webp&width=250px";
-import doctorStrangeImageUrl                     from "../assets/mcu-items/Doctor_Strange_(2016).jpg?as=webp&width=250px";
-import blackPantherImageUrl                      from "../assets/mcu-items/Black_Panther_(2018).jpg?as=webp&width=250px";
-import thorRagnarokImageUrl                      from "../assets/mcu-items/Thor_-_Ragnarok_(2017).jpg?as=webp&width=250px";
-import antManAndTheWaspImageUrl                  from "../assets/mcu-items/Ant-Man_and_the_Wasp_(2018).jpg?as=webp&width=250px";
-import blackWidowImageUrl                        from "../assets/mcu-items/Black_Widow_(2021).jpg?as=webp&width=250px";
-import avengersInfinityWarImageUrl               from "../assets/mcu-items/Avengers_Infinity_War_(2018).jpg?as=webp&width=250px";
-import avengersEndGameImageUrl                   from "../assets/mcu-items/Avengers_Endgame_(2019).jpg?as=webp&width=250px";
-import wandaVisionImageUrl                       from "../assets/mcu-items/WandaVision_(2021).jpg?as=webp&width=250px";
-import theFalconAndTheWinterSoldierImageUrl      from "../assets/mcu-items/The_Falcon_and_the_Winter_Soldier_(2021).jpg?as=webp&width=250px";
-import spiderManFarFromHomeImageUrl              from "../assets/mcu-items/Spider-Man_-_Far_From_Home_(2019).jpg?as=webp&width=250px";
-import lokiImageUrl                              from "../assets/mcu-items/Loki_(2021).jpg?as=webp&width=250px";
-import whatIfImageUrl                            from "../assets/mcu-items/What_If_(2021).jpg?as=webp&width=250px";
-import shangChiAndTheLegendOfTheTenRingsImageUrl from "../assets/mcu-items/Shang-Chi_and_the_Legend_of_the_Ten_Rings_(2021).jpg?as=webp&width=250px";
-import eternalsImageUrl                          from "../assets/mcu-items/Eternals_(2021).jpg?as=webp&width=250px";
-import hawkeyeImageUrl                           from "../assets/mcu-items/Hawkeye_(2021).jpg?as=webp&width=250px";
-import spiderManNoWayHomeImageUrl                from "../assets/mcu-items/Spider-Man_No_Way_Home_(2021).jpg?as=webp&width=250px";
+import captainAmericaTheFirstAvengerImageUrl     from "../assets/images/Captain_America_-_First_Avenger_(2011).jpg?as=webp&width=250px";
+import captainMarvelImageUrl                     from "../assets/images/Captain_Marvel_(2019).jpg?as=webp&width=250px";
+import ironManImageUrl                           from "../assets/images/Iron_Man_(2008).jpg?as=webp&width=250px";
+import ironMan2ImageUrl                          from "../assets/images/Iron_Man_2_(2010).jpg?as=webp&width=250px";
+import theIncredibleHulkImageUrl                 from "../assets/images/The_Incredible_Hulk_(2008).jpg?as=webp&width=250px";
+import thorImageUrl                              from "../assets/images/Thor_(2011).jpg?as=webp&width=250px";
+import theAvengersImageUrl                       from "../assets/images/The_Avengers_(2012).jpg?as=webp&width=250px";
+import ironMan3ImageUrl                          from "../assets/images/Iron_Man_3_(2013).jpg?as=webp&width=250px";
+import thorTheDarkWorldImageUrl                  from "../assets/images/Thor_-_The_Dark_World_(2013).jpg?as=webp&width=250px";
+import captainAmericaTheWinterSoldierImageUrl    from "../assets/images/Captain_America_-_The_Winter_Soldier_(2014).jpg?as=webp&width=250px";
+import guardiansOfTheGalaxyImageUrl              from "../assets/images/Guardians_of_the_Galaxy_(2014).jpg?as=webp&width=250px";
+import guardiansOfTheGalaxyVol2ImageUrl          from "../assets/images/Guardians_of_the_Galaxy_Vol._2_(2017).jpg?as=webp&width=250px";
+import avengersAgeOfUltronImageUrl               from "../assets/images/Avengers_Age_of_Ultron_(2015).jpg?as=webp&width=250px";
+import antManImageUrl                            from "../assets/images/Ant-Man_(2015).jpg?as=webp&width=250px";
+import captainAmericaCivilWarImageUrl            from "../assets/images/Captain_America_-_Civil_War_(2016).jpg?as=webp&width=250px";
+import spiderManHomecomingImageUrl               from "../assets/images/Spider-Man_-_Homecoming_(2017).jpg?as=webp&width=250px";
+import doctorStrangeImageUrl                     from "../assets/images/Doctor_Strange_(2016).jpg?as=webp&width=250px";
+import blackPantherImageUrl                      from "../assets/images/Black_Panther_(2018).jpg?as=webp&width=250px";
+import thorRagnarokImageUrl                      from "../assets/images/Thor_-_Ragnarok_(2017).jpg?as=webp&width=250px";
+import antManAndTheWaspImageUrl                  from "../assets/images/Ant-Man_and_the_Wasp_(2018).jpg?as=webp&width=250px";
+import blackWidowImageUrl                        from "../assets/images/Black_Widow_(2021).jpg?as=webp&width=250px";
+import avengersInfinityWarImageUrl               from "../assets/images/Avengers_Infinity_War_(2018).jpg?as=webp&width=250px";
+import avengersEndGameImageUrl                   from "../assets/images/Avengers_Endgame_(2019).jpg?as=webp&width=250px";
+import wandaVisionImageUrl                       from "../assets/images/WandaVision_(2021).jpg?as=webp&width=250px";
+import theFalconAndTheWinterSoldierImageUrl      from "../assets/images/The_Falcon_and_the_Winter_Soldier_(2021).jpg?as=webp&width=250px";
+import spiderManFarFromHomeImageUrl              from "../assets/images/Spider-Man_-_Far_From_Home_(2019).jpg?as=webp&width=250px";
+import lokiImageUrl                              from "../assets/images/Loki_(2021).jpg?as=webp&width=250px";
+import whatIfImageUrl                            from "../assets/images/What_If_(2021).jpg?as=webp&width=250px";
+import shangChiAndTheLegendOfTheTenRingsImageUrl from "../assets/images/Shang-Chi_and_the_Legend_of_the_Ten_Rings_(2021).jpg?as=webp&width=250px";
+import eternalsImageUrl                          from "../assets/images/Eternals_(2021).jpg?as=webp&width=250px";
+import hawkeyeImageUrl                           from "../assets/images/Hawkeye_(2021).jpg?as=webp&width=250px";
+import spiderManNoWayHomeImageUrl                from "../assets/images/Spider-Man_No_Way_Home_(2021).jpg?as=webp&width=250px";
 
 const McuItems = [
     {
@@ -366,7 +366,7 @@ const McuItems = [
         date: '2021-12-15',
         order_position: 32,
         tmdb_link: 'https://www.themoviedb.org/movie/634649-spider-man-no-way-home',
-        post_credit_scenes: -1
+        post_credit_scenes: 2
     },
 ];
 

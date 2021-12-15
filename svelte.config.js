@@ -4,9 +4,6 @@ export default {
   // Consult https://github.com/sveltejs/svelte-preprocess
   // for more information about preprocessors
   preprocess: sveltePreprocess({
-    postcss: true,
-    image: () => {
-      console.log('test')
-    }
+    postcss: true
   })
 }

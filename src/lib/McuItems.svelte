@@ -37,11 +37,11 @@
           let aPropertyValue = a[sortProperty];
           let bPropertyValue = b[sortProperty];
 
-          if ((new RegExp('[0-9]{4}\/[0-9]{2}\/[0-9]{2}')).test(aPropertyValue)) {
+          if ((new RegExp('[0-9]{4}-[0-9]{2}-[0-9]{2}')).test(aPropertyValue)) {
             aPropertyValue = new Date(aPropertyValue)
           }
 
-          if ((new RegExp('[0-9]{4}\/[0-9]{2}\/[0-9]{2}')).test(bPropertyValue)) {
+          if ((new RegExp('[0-9]{4}-[0-9]{2}-[0-9]{2}')).test(bPropertyValue)) {
             bPropertyValue = new Date(bPropertyValue)
           }
 
