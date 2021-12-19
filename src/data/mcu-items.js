@@ -294,12 +294,21 @@ const McuItems = [
         post_credit_scenes: 2
     },
     {
+        title: 'Spider-Man : No Way Home',
+        type: 'movie',
+        poster: spiderManNoWayHomeImageUrl,
+        date: '2021-12-15',
+        order_position: 27,
+        tmdb_link: 'https://www.themoviedb.org/movie/634649-spider-man-no-way-home',
+        post_credit_scenes: 2
+    },
+    {
         title: 'Loki',
         type: 'tv-show',
         season: 1,
         poster: lokiImageUrl,
         date: '2021-06-09',
-        order_position: 27,
+        order_position: 28,
         tmdb_link: 'https://www.themoviedb.org/tv/84958-loki',
         post_credit_scenes: 2,
         post_credit_scenes_details: [
@@ -319,7 +328,7 @@ const McuItems = [
         season: 1,
         poster: whatIfImageUrl,
         date: '2021-08-11',
-        order_position: 28,
+        order_position: 29,
         tmdb_link: 'https://www.themoviedb.org/tv/91363-what-if',
         post_credit_scenes: 1,
         post_credit_scenes_details: [
@@ -334,7 +343,7 @@ const McuItems = [
         type: 'movie',
         poster: shangChiAndTheLegendOfTheTenRingsImageUrl,
         date: '2021-09-01',
-        order_position: 29,
+        order_position: 30,
         tmdb_link: 'https://www.themoviedb.org/movie/566525-shang-chi-and-the-legend-of-the-ten-rings',
         post_credit_scenes: 2
     },
@@ -343,7 +352,7 @@ const McuItems = [
         type: 'movie',
         poster: eternalsImageUrl,
         date: '2021-11-03',
-        order_position: 30,
+        order_position: 31,
         tmdb_link: 'https://www.themoviedb.org/movie/524434-eternals',
         post_credit_scenes: 2
     },
@@ -353,20 +362,10 @@ const McuItems = [
         season: 1,
         poster: hawkeyeImageUrl,
         date: '2021-11-24',
-        order_position: 31,
+        order_position: 32,
         tmdb_link: 'https://www.themoviedb.org/tv/88329-hawkeye',
         post_credit_scenes: -1,
         post_credit_scenes_details: []
-    },
-
-    {
-        title: 'Spider-Man : No Way Home',
-        type: 'movie',
-        poster: spiderManNoWayHomeImageUrl,
-        date: '2021-12-15',
-        order_position: 32,
-        tmdb_link: 'https://www.themoviedb.org/movie/634649-spider-man-no-way-home',
-        post_credit_scenes: 2
     },
 ];
 
