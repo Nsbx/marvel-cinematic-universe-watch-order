@@ -6,8 +6,10 @@
 
   import Tooltip from './tooltip/Tooltip.svelte'
   import TvShowTooltipContent from './tooltip/TvShowTooltipContent.svelte'
+  import BlurhashImage from '/node_modules/svelte-blurhash/src/BlurhashImage.svelte';
 
   import McuItems from "../data/mcu-items.js";
+  import blurHashs from "../assets/images/blurhash-map.json";
 
   let tooltipOption = {
     theme: "translucent",
@@ -103,7 +105,15 @@
 <div id="mcu-items-container" >
   {#each items as item (item.order_position)}
     <div animate:flip="{{ duration:d => 20 * Math.floor(Math.sqrt(d)) }}" transition:fade class="item">
-      <img src="{item.poster}" alt={item.title} class="poster" />
+      <div class="poster">
+        <BlurhashImage 
+        src={item.poster} 
+        hash={blurHashs[item.slug]}
+        width="192"
+        height="288"
+        alt={item.title} 
+        />
+      </div>
       <div class="item-body">
         {#if item.title.length >= 17 }
         <h1 use:tooltip={tooltipOption} title={item.title}>{item.title}</h1>
@@ -159,6 +169,7 @@
   }
 
   .poster {
-    @apply w-48;
+    width: 192px;
+    height: 288px;
   }
 </style>

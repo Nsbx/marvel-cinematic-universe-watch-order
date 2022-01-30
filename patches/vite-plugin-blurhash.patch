@@ -1,0 +1,11 @@
+--- a/dist/index.js
++++ b/dist/index.js
+@@ -128,7 +128,7 @@ var defineHashes = (options) => {
+     let file = imagesToBlur[i][name];
+     if (!blurhashMap[name]) {
+       blurhashThis(file).then((hash) => {
+-        blurhashMap[name] = JSON.stringify(hash);
++        blurhashMap[name] = hash;
+         if (mapPath)
+           _fs.writeFileSync.call(void 0, mapPath, JSON.stringify(blurhashMap, null, 2));
+         if (options.log)

@@ -22,10 +22,12 @@
     "typescript": "^4.3.2",
     "vite": "^2.5.4",
     "vite-imagetools": "^3.6.8",
-    "vite-plugin-blurhash": "^0.1.5"
+    "vite-plugin-blurhash": "patch:vite-plugin-blurhash@0.2.0#./patches/vite-plugin-blurhash.patch"
   },
   "dependencies": {
     "@rollup/plugin-replace": "^3.0.0",
+    "blurhash": "^1.1.4",
+    "svelte-blurhash": "^1.2.1",
     "tippy.js": "^6.3.7"
   }
 }
