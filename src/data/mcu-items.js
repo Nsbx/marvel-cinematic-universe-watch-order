@@ -31,6 +31,7 @@ import whatIfImageUrl                                from "../assets/images/What
 import shangChiAndTheLegendOfTheTenRingsImageUrl     from "../assets/images/Shang-Chi_and_the_Legend_of_the_Ten_Rings_(2021).jpg?as=webp&width=250px";
 import eternalsImageUrl                              from "../assets/images/Eternals_(2021).jpg?as=webp&width=250px";
 import hawkeyeImageUrl                               from "../assets/images/Hawkeye_(2021).jpg?as=webp&width=250px";
+import moonKnightImageUrl                            from "../assets/images/Moon_Knight_(2022).jpg?as=webp&width=250px";
 import doctorStrangeInTheMultiverseOfMadnessImageUrl from "../assets/images/Doctor_Strange_in_the_Multiverse_of_Madness_(2022).jpg?as=webp&width=250px";
 
 const McuItems = [
@@ -496,12 +497,25 @@ const McuItems = [
         mcu_phase: 4
     },
     {
+        title: 'Moon Knight',
+        slug: 'moon-knight',
+        type: 'tv-show',
+        season: 1,
+        poster: moonKnightImageUrl,
+        date: '2022-03-30',
+        order_position: 33,
+        tmdb_link: 'https://www.themoviedb.org/tv/92749-moon-knight',
+        post_credit_scenes: -1,
+        post_credit_scenes_details: [],
+        mcu_phase: 4
+    },
+    {
         title: 'Doctor Strange in the Multiverse of Madness',
         slug: 'doctor-strange-in-the-multiverse-of-madness',
         type: 'movie',
         poster: doctorStrangeInTheMultiverseOfMadnessImageUrl,
         date: '2022-05-04',
-        order_position: 33,
+        order_position: 34,
         tmdb_link: 'https://www.themoviedb.org/movie/453395-doctor-strange-in-the-multiverse-of-madness',
         post_credit_scenes: -1,
         mcu_phase: 4

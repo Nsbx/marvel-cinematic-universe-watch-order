@@ -44,7 +44,8 @@ export default defineConfig({
           'shang-chi-and-the-legend-of-the-ten-rings'   : "/src/assets/images/Shang-Chi_and_the_Legend_of_the_Ten_Rings_(2021).jpg",
           'eternals'                                    : "/src/assets/images/Eternals_(2021).jpg",
           'hawkeye'                                     : "/src/assets/images/Hawkeye_(2021).jpg",
-          'doctor-strange-in-the-multiverse-of-madness' : "/src/assets/images/Doctor_Strange_in_the_Multiverse_of_Madness_(2022).jpg"
+          'moon-knight'                                 : "/src/assets/images/Moon_Knight_(2022).jpg",
+          'doctor-strange-in-the-multiverse-of-madness' : "/src/assets/images/Doctor_Strange_in_the_Multiverse_of_Madness_(2022).jpg",
         }
       }
     )
