@@ -33,6 +33,7 @@ import eternalsImageUrl                              from "../assets/images/Eter
 import hawkeyeImageUrl                               from "../assets/images/Hawkeye_(2021).jpg?as=webp&width=250px";
 import moonKnightImageUrl                            from "../assets/images/Moon_Knight_(2022).jpg?as=webp&width=250px";
 import doctorStrangeInTheMultiverseOfMadnessImageUrl from "../assets/images/Doctor_Strange_in_the_Multiverse_of_Madness_(2022).jpg?as=webp&width=250px";
+import msMarvelImageUrl                              from "../assets/images/Ms._Marvel_(2022).jpg?as=webp&width=250px";
 
 const McuItems = [
     {
@@ -518,6 +519,19 @@ const McuItems = [
         order_position: 34,
         tmdb_link: 'https://www.themoviedb.org/movie/453395-doctor-strange-in-the-multiverse-of-madness',
         post_credit_scenes: -1,
+        mcu_phase: 4
+    },
+    {
+        title: 'Ms. Marvel',
+        slug: 'ms-marvel',
+        type: 'tv-show',
+        season: 1,
+        poster: msMarvelImageUrl,
+        date: '2022-06-08',
+        order_position: 35,
+        tmdb_link: 'https://www.themoviedb.org/tv/92782-ms-marvel',
+        post_credit_scenes: -1,
+        post_credit_scenes_details: [],
         mcu_phase: 4
     },
 ];

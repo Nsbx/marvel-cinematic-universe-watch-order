@@ -46,6 +46,7 @@ export default defineConfig({
           'hawkeye'                                     : "/src/assets/images/Hawkeye_(2021).jpg",
           'moon-knight'                                 : "/src/assets/images/Moon_Knight_(2022).jpg",
           'doctor-strange-in-the-multiverse-of-madness' : "/src/assets/images/Doctor_Strange_in_the_Multiverse_of_Madness_(2022).jpg",
+          'ms-marvel'                                   : "/src/assets/images/Ms._Marvel_(2022).jpg",
         }
       }
     )
