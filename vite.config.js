@@ -47,6 +47,7 @@ export default defineConfig({
           'moon-knight'                                 : "/src/assets/images/Moon_Knight_(2022).jpg",
           'doctor-strange-in-the-multiverse-of-madness' : "/src/assets/images/Doctor_Strange_in_the_Multiverse_of_Madness_(2022).jpg",
           'ms-marvel'                                   : "/src/assets/images/Ms._Marvel_(2022).jpg",
+          'thor-love-and-thunder'                       : "/src/assets/images/Thor_Love_and_Thunder_(2022).jpg",
         }
       }
     )

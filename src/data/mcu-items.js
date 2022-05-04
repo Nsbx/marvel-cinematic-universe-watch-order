@@ -34,6 +34,7 @@ import hawkeyeImageUrl                               from "../assets/images/Hawk
 import moonKnightImageUrl                            from "../assets/images/Moon_Knight_(2022).jpg?as=webp&width=250px";
 import doctorStrangeInTheMultiverseOfMadnessImageUrl from "../assets/images/Doctor_Strange_in_the_Multiverse_of_Madness_(2022).jpg?as=webp&width=250px";
 import msMarvelImageUrl                              from "../assets/images/Ms._Marvel_(2022).jpg?as=webp&width=250px";
+import thorLoveAndThunderImageUrl                    from "../assets/images/Thor_Love_and_Thunder_(2022).jpg?as=webp&width=250px";
 
 const McuItems = [
     {
@@ -507,7 +508,10 @@ const McuItems = [
         order_position: 33,
         tmdb_link: 'https://www.themoviedb.org/tv/92749-moon-knight',
         post_credit_scenes: -1,
-        post_credit_scenes_details: [],
+        post_credit_scenes_details: [{
+            episode: 6,
+            count: 1
+        }],
         mcu_phase: 4
     },
     {
@@ -532,6 +536,17 @@ const McuItems = [
         tmdb_link: 'https://www.themoviedb.org/tv/92782-ms-marvel',
         post_credit_scenes: -1,
         post_credit_scenes_details: [],
+        mcu_phase: 4
+    },
+    {
+        title: 'Thor: Love and Thunder',
+        slug: 'thor-love-and-thunder',
+        type: 'movie',
+        poster: thorLoveAndThunderImageUrl,
+        date: '2022-08-07',
+        order_position: 36,
+        tmdb_link: 'https://www.themoviedb.org/movie/616037-thor-love-and-thunders',
+        post_credit_scenes: -1,
         mcu_phase: 4
     },
 ];
