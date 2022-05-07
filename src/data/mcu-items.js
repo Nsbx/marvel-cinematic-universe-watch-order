@@ -507,7 +507,7 @@ const McuItems = [
         date: '2022-03-30',
         order_position: 33,
         tmdb_link: 'https://www.themoviedb.org/tv/92749-moon-knight',
-        post_credit_scenes: -1,
+        post_credit_scenes: 1,
         post_credit_scenes_details: [{
             episode: 6,
             count: 1
@@ -522,7 +522,7 @@ const McuItems = [
         date: '2022-05-04',
         order_position: 34,
         tmdb_link: 'https://www.themoviedb.org/movie/453395-doctor-strange-in-the-multiverse-of-madness',
-        post_credit_scenes: -1,
+        post_credit_scenes: 2,
         mcu_phase: 4
     },
     {
