@@ -35,6 +35,8 @@ import moonKnightImageUrl                            from "../assets/images/Moon
 import doctorStrangeInTheMultiverseOfMadnessImageUrl from "../assets/images/Doctor_Strange_in_the_Multiverse_of_Madness_(2022).jpg?as=webp&width=250px";
 import msMarvelImageUrl                              from "../assets/images/Ms._Marvel_(2022).jpg?as=webp&width=250px";
 import thorLoveAndThunderImageUrl                    from "../assets/images/Thor_Love_and_Thunder_(2022).jpg?as=webp&width=250px";
+import sheHulkAttorneyAtLawImageUrl                  from "../assets/images/She_-_Hulk_Attorney_at_Law_(2022).jpg?as=webp&width=250px";
+
 
 const McuItems = [
     {
@@ -534,8 +536,11 @@ const McuItems = [
         date: '2022-06-08',
         order_position: 35,
         tmdb_link: 'https://www.themoviedb.org/tv/92782-ms-marvel',
-        post_credit_scenes: -1,
-        post_credit_scenes_details: [],
+        post_credit_scenes: 1,
+        post_credit_scenes_details: [{
+            episode: 6,
+            count: 1
+        }],
         mcu_phase: 4
     },
     {
@@ -546,7 +551,20 @@ const McuItems = [
         date: '2022-08-07',
         order_position: 36,
         tmdb_link: 'https://www.themoviedb.org/movie/616037-thor-love-and-thunders',
+        post_credit_scenes: 2,
+        mcu_phase: 4
+    },
+    {
+        title: 'She-Hulk: Attorney at Law',
+        slug: 'she-hulk-attorney-at-law',
+        type: 'tv-show',
+        season: 1,
+        poster: sheHulkAttorneyAtLawImageUrl,
+        date: '2022-08-17',
+        order_position: 37,
+        tmdb_link: 'https://www.themoviedb.org/tv/92783-she-hulk-attorney-at-law',
         post_credit_scenes: -1,
+        post_credit_scenes_details: [],
         mcu_phase: 4
     },
 ];

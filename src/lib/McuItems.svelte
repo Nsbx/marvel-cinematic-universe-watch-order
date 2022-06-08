@@ -69,11 +69,13 @@
       filterProperty = filterString;
     }
 
-    if (filterProperty === 'all') {
-      items = McuItems;
+    if (filterProperty !== 'all') {
+      setTimeout(() => { 
+        let filteredMcuItems = McuItems.filter(item => item[filterProperty] == filterValue);
+        items = filteredMcuItems;
+      }, 0);
     } else {
-      let filteredMcuItems = McuItems.filter(item => item[filterProperty] == filterValue);
-      items = filteredMcuItems;
+      items = McuItems;
     }
   }
 
