@@ -560,11 +560,14 @@ const McuItems = [
         type: 'tv-show',
         season: 1,
         poster: sheHulkAttorneyAtLawImageUrl,
-        date: '2022-08-17',
+        date: '2022-08-18',
         order_position: 37,
         tmdb_link: 'https://www.themoviedb.org/tv/92783-she-hulk-attorney-at-law',
-        post_credit_scenes: -1,
-        post_credit_scenes_details: [],
+        post_credit_scenes: 1,
+        post_credit_scenes_details: [{
+            episode: 1,
+            count: 1
+        }],
         mcu_phase: 4
     },
 ];
